@@ -2,15 +2,8 @@
 {
   "modid": "aimstrike",
   "name": "AimStrike",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
-  "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["ExampleDude"],
-  "credits": "The Forge and FML guys, for making this example",
-  "logoFile": "",
-  "screenshots": [],
-  "dependencies": []
+  "description": "Minecraft mod for auto striking the nearest entity",
+  "version": "1.0",
+  "authorList": ["sh4man"]
 }
 ]
