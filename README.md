@@ -1,10 +1,10 @@
-# EntityLogger
+# AimStriker
 
 <video src="https://github.com/user-attachments/assets/ab5d121a-aec0-48ec-b0c2-4d8d890097ad"></video>
 
 # What is it?
 
-This is a simple Minecraft cheat that **automatically aims at the nearest entity and attacks it**. You can configure the key in the game settings.
+This is a simple Minecraft cheat that **automatically aims at the nearest entity and attacks it**. You can configure the enable/disable key in the game settings.
 
 # Quick Start
 
