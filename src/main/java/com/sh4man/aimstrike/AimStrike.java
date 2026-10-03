@@ -38,9 +38,7 @@ public class AimStrike
 
         if (closestEntity != null)
         {
-            double distance = player.getDistance(closestEntity);
-
-            System.out.println("Closest entity: " + closestEntity + " " + "Distance: " + distance);
+            Camera.moveCamera(player, closestEntity);
         }
     }
 }

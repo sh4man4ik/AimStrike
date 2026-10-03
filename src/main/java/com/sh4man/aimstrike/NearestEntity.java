@@ -8,7 +8,8 @@ import net.minecraft.util.math.AxisAlignedBB;
 
 import java.util.List;
 
-public class NearestEntity {
+public class NearestEntity
+{
     public static Entity getNearestEntity(Minecraft mc, EntityPlayer player)
     {
         AxisAlignedBB box = player.getEntityBoundingBox().grow(10);
