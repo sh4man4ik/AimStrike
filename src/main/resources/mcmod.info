@@ -2,7 +2,7 @@
 {
   "modid": "aimstrike",
   "name": "AimStrike",
-  "description": "Minecraft mod for auto striking the nearest entity",
+  "description": "Minecraft cheat for auto striking the nearest entity",
   "version": "1.0",
   "authorList": ["sh4man"]
 }
