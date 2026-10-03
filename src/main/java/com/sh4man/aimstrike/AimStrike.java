@@ -21,6 +21,7 @@ public class AimStrike
     public void preInit(FMLPreInitializationEvent event)
     {
         MinecraftForge.EVENT_BUS.register(this);
+        MinecraftForge.EVENT_BUS.register(new ModControl());
     }
 
     @SubscribeEvent
@@ -29,14 +30,14 @@ public class AimStrike
         Minecraft mc = Minecraft.getMinecraft();
         EntityPlayer player = mc.player;
 
-        if (event.phase != TickEvent.Phase.END || mc.world == null || player == null)
+        if (event.phase == TickEvent.Phase.START || mc.world == null || player == null)
         {
             return;
         }
 
         Entity closestEntity = NearestEntity.getNearestEntity(mc, player);
 
-        if (closestEntity != null)
+        if (closestEntity != null && ModControl.enabled)
         {
             Camera.moveCamera(player, closestEntity);
             Mouse.click(mc, player, closestEntity);
