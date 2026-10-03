@@ -39,6 +39,7 @@ public class AimStrike
         if (closestEntity != null)
         {
             Camera.moveCamera(player, closestEntity);
+            Mouse.click(mc, player, closestEntity);
         }
     }
 }

@@ -12,7 +12,7 @@ public class NearestEntity
 {
     public static Entity getNearestEntity(Minecraft mc, EntityPlayer player)
     {
-        AxisAlignedBB box = player.getEntityBoundingBox().grow(10);
+        AxisAlignedBB box = player.getEntityBoundingBox().grow(5);
         List<EntityLivingBase> entities = player.world.getEntitiesWithinAABB(EntityLivingBase.class, box);
 
         Entity closestEntity = null;
