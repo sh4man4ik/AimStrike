@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
-@Mod(modid = AimStrike.MODID, name = AimStrike.NAME, version = AimStrike.VERSION)
+@Mod(modid = AimStrike.MODID, name = AimStrike.NAME, version = AimStrike.VERSION, clientSideOnly = true)
 public class AimStrike
 {
     public static final String MODID = "aimstrike";
@@ -20,6 +20,7 @@ public class AimStrike
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
+        ModControl.register();
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(new ModControl());
     }
@@ -30,14 +31,14 @@ public class AimStrike
         Minecraft mc = Minecraft.getMinecraft();
         EntityPlayer player = mc.player;
 
-        if (event.phase == TickEvent.Phase.START || mc.world == null || player == null)
+        if (event.phase == TickEvent.Phase.START || !ModControl.enabled || mc.world == null || player == null)
         {
             return;
         }
 
         Entity closestEntity = NearestEntity.getNearestEntity(mc, player);
 
-        if (closestEntity != null && ModControl.enabled)
+        if (closestEntity != null)
         {
             Camera.moveCamera(player, closestEntity);
             Mouse.click(mc, player, closestEntity);
