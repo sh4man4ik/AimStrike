@@ -11,7 +11,7 @@ public class Mouse
     {
         double distance = player.getDistance(closestEntity);
 
-        if (distance < 3)
+        if (distance < 3 && player.getCooledAttackStrength(0) >= 1.0F)
         {
             KeyBinding strike = mc.gameSettings.keyBindAttack;
             KeyBinding.onTick(strike.getKeyCode());
