@@ -1,6 +1,6 @@
 # AimStrike
 
-<video src="https://github.com/user-attachments/assets/1d841e5c-f677-4ea8-9b0a-3daf7445b6ff"></video>
+<video src="https://github.com/user-attachments/assets/720782b3-1787-4870-a609-5343200a0e06"></video>
 
 # What is it?
 
