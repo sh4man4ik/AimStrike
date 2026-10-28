@@ -1,2 +1,4 @@
 key.categories.aimstrike=AimStrike
-key.aimstrike.toggle=Toggle AimStrike
+key.aimstrike.toggle_aim=Toggle Aim
+key.aimstrike.toggle_left_click=Toggle Left Click
+key.aimstrike.toggle_right_click=Toggle Right Click

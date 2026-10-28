@@ -1,20 +1,22 @@
-package com.sh4man.aimstrike;
+package com.sh4man.aimstrike.helpers;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.settings.KeyBinding;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 
 public class Mouse
 {
-    public static void click(Minecraft mc, EntityPlayer player, Entity closestEntity)
+    public static void leftClick(Minecraft mc, EntityPlayer player)
     {
-        double distance = player.getDistance(closestEntity);
-
-        if (distance < 3 && player.getCooledAttackStrength(0) >= 1.0F)
+        if (player.getCooledAttackStrength(0) >= 1.0F)
         {
             KeyBinding strike = mc.gameSettings.keyBindAttack;
             KeyBinding.onTick(strike.getKeyCode());
         }
+    }
+
+    public static void rightClick(Minecraft mc)
+    {
+        KeyBinding.onTick(mc.gameSettings.keyBindUseItem.getKeyCode());
     }
 }

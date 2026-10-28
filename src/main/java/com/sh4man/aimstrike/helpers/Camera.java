@@ -1,4 +1,4 @@
-package com.sh4man.aimstrike;
+package com.sh4man.aimstrike.helpers;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;

@@ -1,4 +1,4 @@
-package com.sh4man.aimstrike;
+package com.sh4man.aimstrike.helpers;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.Entity;
@@ -8,9 +8,9 @@ import net.minecraft.util.math.AxisAlignedBB;
 
 import java.util.List;
 
-public class NearestEntity
+public class closestEntity
 {
-    public static Entity getNearestEntity(Minecraft mc, EntityPlayer player)
+    public static Entity getClosestEntity(Minecraft mc, EntityPlayer player)
     {
         AxisAlignedBB box = player.getEntityBoundingBox().grow(5);
         List<EntityLivingBase> entities = player.world.getEntitiesWithinAABB(EntityLivingBase.class, box);
