@@ -4,7 +4,12 @@
 
 # What is it?
 
-This is a simple Minecraft cheat that **automatically aims at the nearest entity and attacks it**. You can configure the enable/disable key in the game settings.
+This is a simple Minecraft cheat that can:
+* **Automatically aim** at the nearest entity within a 5-block range
+* **Click the left mouse button** with a delay for the most powerful strike
+* **Click the left mouse button** without delay
+
+You can configure the enable/disable key in the game settings for each function
 
 # Quick Start
 
