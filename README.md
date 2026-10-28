@@ -1,6 +1,6 @@
-# AimStriker
+# AimStrike
 
-<video src="https://github.com/user-attachments/assets/ab5d121a-aec0-48ec-b0c2-4d8d890097ad"></video>
+<video src="https://github.com/user-attachments/assets/1d841e5c-f677-4ea8-9b0a-3daf7445b6ff"></video>
 
 # What is it?
 
